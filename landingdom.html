@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- <div id="slideshowContainer"></div> -->
   <main>
     <div>
       <span>Full Stack Web Developer</span>
@@ -17,10 +16,10 @@
         Apakah kalian tertarik dengan dunia ini?
         klik "Join Us" sekarang!!
       </p>
-      <a href="form.html">join us</a>
+      <a href="form.html" id="joinButton">join us</a>
     </div>
 
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="slideshowContainer">
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
@@ -55,9 +54,41 @@
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    </div>
   </main>
 
-  <script src="app.js"></script>
+  <script>
+    // JavaScript DOM untuk slideshow
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    // JavaScript DOM untuk menambahkan fungsi klik pada tombol Join Us
+    var joinButton = document.getElementById("joinButton");
+    joinButton.addEventListener("click", function(event) {
+      // event.preventDefault();
+      // alert("Anda telah mengklik tombol Join Us!");
+      // Untuk melakukan navigasi ke halaman form.html
+      // window.location.href = "form.html";
+    });
+  </script>
 </body>
 </html>
