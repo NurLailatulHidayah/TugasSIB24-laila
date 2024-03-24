@@ -71,74 +71,6 @@ main>div>a:hover {
   color: #005baa;
 }
 
-/* .swiper {
-  width: 100%;
-  padding-top: 3.125rem;
-}
-
-.swiper-slide {
-  width: 18.75rem;
-  height: 28.125rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: self-start;
-  border-radius: 5px;
-}
-
-.swiper-slide h2 {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin-bottom: 0.625rem;
-  padding: 0 0 0 1.563rem;
-  text-transform: uppercase;
-}
-
-.swiper-slide p {
-  color: #dadada;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  padding: 0 1.563rem;
-  line-height: 1.6;
-  font-size: 0.75rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.swiper-slide a {
-  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
-  padding: 0.438rem 1.875rem;
-  font-size: 0.9rem;
-}
-
-.swiper-slide a:hover {
-  color: #005baa;
-}
-
-.swiper-slide div {
-  display: none;
-  opacity: 0;
-  padding-bottom: 0.625rem;
-}
-
-.swiper-slide-active div {
-  display: block;
-  opacity: 1;
-}
-
-.swiper-pagination {
-  bottom: 1.25rem !important;
-}
-
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
-  background-color: #fafafa;
-} */
 
 .slideshow-container {
   width: 100vh;
@@ -204,67 +136,7 @@ main>div>a:hover {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* .slides {
-  width: 100%;
-  position: relative;
-}
 
-.slides .slide{
-  display: none;
-}
-.slides .slide img{
-  width: 100%;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-
-
-.slides .navigation{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.slides .navigation .prev,
-.slides .navigation .next {
-  cursor: pointer;
-  padding: 16px;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-  background: rgba(0, 0, 0, 0.2);
-  user-select: none;
-  transition: 0.6s ease;
-}
-
-.slides .navigation .prev:hover,
-.slides .navigation .next:hover {
-  background: rgba(0, 0, 0, 1);
-}
-
-@keyframes fade {
-  form{opacity: 0.3}
-  to {opacity: 1}
-} */
-
-/* .slide-1 {
-  background: linear-gradient(to top,
-  #0f2027,
-  #203a4300,
-  #2c536400, 
-  url("img/1.jpg") no-repeat 50% 50%/cover);
-}
-.slide-2 {
-  background: linear-gradient(to top,#0f2027,#203a4300,#2c536400, url("img/2.jpg") no-repeat 50% 50%/cover);
-}
-.slide-3 {
-  background: linear-gradient(to top,#0f2027,#203a4300,#2c536400, url("img/NCPL.jpg") no-repeat 50% 50%/cover);
-} */
 
 /* responsive */
 @media screen and (min-width: 48rem){
