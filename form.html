@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Input</title>
-  <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-  <div class="container">
-  <h1 class="title">Form Daftar</h1>
-  <div class="content">
-    <form action="index.html">
-      <div class="user-details">
-        <div class="input-inbox">
-          <span class="details">Nama Lengkap</span>
-          <input type="text" placeholder="Masukkan nama lengkap">
-        </div>
-        <div class="input-inbox">
-          <span class="details">Email</span>
-          <input type="text" placeholder="Masukkan Email aktif">
-        </div>
-        <div class="input-inbox">
-          <span class="details">No.Hp</span>
-          <input type="text" placeholder="Masukkan nomor hp">
-        </div>
-        <div class="input-inbox">
-          <span class="details">Prodi</span>
-          <select name="prodi" id="prodi">
-            <option value="prodianda">Prodi anda</option>
-            <option value="trpl">Teknologi Rekayasa Perangkat Lunak</option>
-            <option value="trk">Teknologi Rekayasa Komputer</option>
-            <option value="bisnisdigital">Bisnis Digital</option>
-          </select>
-        </div>
-        <div class="input-inbox">
-          <div>
-            <span class="details">Hobi</span><br>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-          <label for="vehicle1"> Membaca</label><br>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-          <label for="vehicle2"> Menulis</label><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Nonton</label><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Olahraga</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Form Daftar</h1>
+      <div class="content">
+        <form action="index.html">
+          <div class="user-details">
+            <div class="input-inbox">
+              <span class="details">Nama Lengkap</span>
+              <input type="text" placeholder="Masukkan nama lengkap" />
+            </div>
+            <div class="input-inbox">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Masukkan Email aktif" />
+            </div>
+            <div class="input-inbox">
+              <span class="details">No.Hp</span>
+              <input type="text" placeholder="Masukkan nomor hp" />
+            </div>
+            <div class="input-inbox">
+              <span class="details">Prodi</span>
+              <select name="prodi" id="prodi">
+                <option value="prodianda">Prodi anda</option>
+                <option value="trpl">Teknologi Rekayasa Perangkat Lunak</option>
+                <option value="trk">Teknologi Rekayasa Komputer</option>
+                <option value="bisnisdigital">Bisnis Digital</option>
+              </select>
+            </div>
+            <div class="input-inbox">
+              <div>
+                <span class="details">Hobi</span><br />
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                <label for="vehicle1"> Membaca</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle2"
+                  name="vehicle2"
+                  value="Car"
+                />
+                <label for="vehicle2"> Menulis</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle3"
+                  name="vehicle3"
+                  value="Boat"
+                />
+                <label for="vehicle3"> Nonton</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle3"
+                  name="vehicle3"
+                  value="Boat"
+                />
+                <label for="vehicle3"> Olahraga</label>
+              </div>
+            </div>
+            <div class="input-inbox">
+              <span class="details">Alamat</span>
+              <input type="text" placeholder="Masukkan alamat lengkap" />
+            </div>
+            <div class="input-inbox">
+              <span class="details">Jenis Kelamin</span>
+              <input type="radio" name="gender" id="dot-1" />
+              <input type="radio" name="gender" id="dot-2" />
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Pria</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Wanita</span>
+                </label>
+              </div>
+            </div>
+            <div class="input-inbox">
+              <span class="details">Foto Diri</span>
+              <input type="file" id="img" name="img" accept="image/*" />
+            </div>
           </div>
-        </div>
-        <div class="input-inbox">
-          <span class="details">Alamat</span>
-          <input type="text" placeholder="Masukkan alamat lengkap">
-        </div>
-        <div class="input-inbox">
-          <span class="details">Jenis Kelamin</span>
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <div class="category">
-            <label for="dot-1">
-              <span class="dot one"></span>
-              <span class="gender">Pria</span>
-            </label>
-            <label for="dot-2">
-              <span class="dot two"></span>
-              <span class="gender">Wanita</span>
-            </label>
+          <div class="button">
+            <input type="submit" value="Daftar" />
           </div>
-        </div>
-        <div class="input-inbox">
-          <span class="details">Foto Diri</span>
-          <input type="file" id="img" name="img" accept="image/*">
-        </div>
+        </form>
       </div>
-      <div class="button">
-        <input type="submit" value="Daftar">
-      </div>
-    </form>
     </div>
-  </div>
-</body>
+  </body>
 </html>
-

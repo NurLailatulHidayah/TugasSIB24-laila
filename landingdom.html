@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <div>
-      <span>Full Stack Web Developer</span>
-      <h1>Nur Lailatul Hidayah</h1>
-      <hr>
-      <p>Hallo selamat datang di dunia Full Stack Web Developer
-        Apakah kalian tertarik dengan dunia ini?
-        klik "Join Us" sekarang!!
-      </p>
-      <a href="form.html" id="joinButton">join us</a>
-    </div>
-
-    <div class="slideshow-container" id="slideshowContainer">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="img/1.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="img/2.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="img/4.jpg" style="width:100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <span>Full Stack Web Developer</span>
+        <h1>Nur Lailatul Hidayah</h1>
+        <hr />
+        <p>
+          Hallo selamat datang di dunia Full Stack Web Developer Apakah kalian
+          tertarik dengan dunia ini? klik "Join Us" sekarang!!
+        </p>
+        <a href="form.html" id="joinButton">join us</a>
       </div>
 
-      <div class="mySlides fade">
-        <img src="img/6.jpg" style="width:100%">
+      <div class="slideshow-container" id="slideshowContainer">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img/1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/4.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/6.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/7.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/8.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/9.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+    </main>
 
-      <div class="mySlides fade">
-        <img src="img/7.jpg" style="width:100%">
-      </div>
+    <script>
+      // JavaScript DOM untuk slideshow
 
-      <div class="mySlides fade">
-        <img src="img/8.jpg" style="width:100%">
-      </div>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-      <div class="mySlides fade">
-        <img src="img/9.jpg" style="width:100%">
-      </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-  </main>
-
-  <script>
-    // JavaScript DOM untuk slideshow
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
       }
-      slides[slideIndex-1].style.display = "block";
-    }
 
-    // JavaScript DOM untuk menambahkan fungsi klik pada tombol Join Us
-    var joinButton = document.getElementById("joinButton");
-    joinButton.addEventListener("click", function(event) {
-      // event.preventDefault();
-      // alert("Anda telah mengklik tombol Join Us!");
-      // Untuk melakukan navigasi ke halaman form.html
-      // window.location.href = "form.html";
-    });
-  </script>
-</body>
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+      // JavaScript DOM untuk menambahkan fungsi klik pada tombol Join Us
+      var joinButton = document.getElementById("joinButton");
+      joinButton.addEventListener("click", function (event) {
+        // event.preventDefault();
+        // alert("Anda telah mengklik tombol Join Us!");
+        // Untuk melakukan navigasi ke halaman form.html
+        // window.location.href = "form.html";
+      });
+    </script>
+  </body>
 </html>
